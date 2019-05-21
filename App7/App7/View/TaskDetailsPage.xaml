@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:App7.ViewModel"
+             x:Class="App7.View.TaskDetailsPage"
+			 Title="Task Details">
+
+	<ContentPage.BindingContext>
+		<viewModels:TaskDetailsViewModel/>
+	</ContentPage.BindingContext>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="report" Clicked="report_Clicked" Text=""/>
+		<ToolbarItem x:Name="actions" Clicked="actions_Clicked" Text="{Binding status}"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+
+		<ScrollView>
+			<StackLayout Orientation="Vertical">
+				<Label WidthRequest="20" HeightRequest="50" Margin="5"  Text="Visit Details" BackgroundColor="#dddddd" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="18" TextColor="Red"/>
+				<!-- Start VisitDetails Stack-->
+				<StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="#e8e8e8">
+					<!-- Start CustomerDetails LeftStack-->
+					<StackLayout Orientation="Vertical" HorizontalOptions="Center">
+						<Grid>
+							<Label Text="ID:" Grid.Row="0"  FontSize="15" TextColor="Black" TextDecorations="Underline" FontAttributes="Bold"/>
+							<Label Text="Category Name:" Grid.Row="1"  FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+							<Label Text="Type Name:" Grid.Row="2" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+							<Label Text="Project Number:" Grid.Row="3" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+							<Label Text="ScheduledAt:" Grid.Row="4" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+							<Label Text="Transportation:" Grid.Row="5"  FontSize="15" FontAttributes="Bold" TextColor="Black" />
+							<Label Text="Description:" Grid.Row="6"  FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+						</Grid>
+					</StackLayout>
+
+					<!-- End CustomerDetails LeftStack-->
+
+					<!-- Start CustomerDetails RightStack-->
+					<StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="#e8e8e8">
+						<Grid>
+							<Label x:Name="Id" Grid.Row="0"  FontSize="15" TextDecorations="Underline"/>
+							<Label x:Name="CategoryName" Grid.Row="1" HorizontalTextAlignment="End" FontSize="15"/>
+							<Label x:Name="TypeName" Grid.Row="2" FontSize="15" HorizontalTextAlignment="End"/>
+							<Label x:Name="ProjectNumber" Grid.Row="3" FontSize="15" />
+							<Label x:Name="ScheduledAt" Grid.Row="4" FontSize="15" TextDecorations="Underline"/>
+							<Label x:Name="TransportationMeanName" Grid.Row="5" FontSize="15" />
+							<Label x:Name="Description" Grid.Row="6" FontSize="15" />
+
+						</Grid>
+					</StackLayout>
+
+					<!-- End CustomerDetails RightStack-->
+				</StackLayout>
+
+				<!-- End VisitDetails Stack-->
+
+				<Label WidthRequest="20" HeightRequest="50" Text="Customer Details" Margin="5" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="#dddddd"  FontSize="18" TextColor="Red"/>
+
+				<!-- Start CustomerDetails Stack-->
+				<StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="#e8e8e8">
+					<!-- Start CustomerDetails LeftStack-->
+					<StackLayout Orientation="Vertical" HorizontalOptions="Center">
+						<Grid>
+							<Label Text="Customer Name:" Grid.Row="0"  FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+							<Label Text="Customer Alias Name:" Grid.Row="1" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+							<Label Text="Customer Address:" Grid.Row="2" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+							<Label Text="Brach Name:" Grid.Row="3" FontSize="15" TextColor="Black" FontAttributes="Bold"/>
+
+						</Grid>
+					</StackLayout>
+
+					<!-- End CustomerDetails LeftStack-->
+
+					<!-- Start CustomerDetails RightStack-->
+					<StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="#e8e8e8">
+						<Grid>
+							<Label x:Name="customername" Grid.Row="0" FontSize="15" />
+							<Label x:Name="customeraliasName" Grid.Row="1" FontSize="15" />
+							<Label x:Name="customeraddress" Grid.Row="2" FontSize="15" />
+							<Label x:Name="branchname" Grid.Row="3" FontSize="15" />
+
+						</Grid>
+					</StackLayout>
+
+					<!-- End CustomerDetails RightStack-->
+				</StackLayout>
+
+				<!-- End CustomerDetails Stack-->
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

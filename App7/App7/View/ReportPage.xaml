@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:App7.ViewModel"
+             x:Class="App7.View.ReportPage"
+			 Title="Report">
+
+	<ContentPage.BindingContext>
+		<viewModels:ReportViewModel/>
+	</ContentPage.BindingContext>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="clear" Text="Clear" Clicked="Clear_Clicked"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical"  Margin="8" >
+			<StackLayout Orientation="Vertical" VerticalOptions="Center">
+				<Label Text="Status" TextColor="#66d0f9" FontSize="18" VerticalTextAlignment="Center"></Label>
+				<Picker ItemsSource="{Binding status}" x:Name="statusPicker" Title="Select" SelectedIndexChanged="StatusPicker_SelectedIndexChanged">
+
+					
+				</Picker>
+			</StackLayout>
+
+			<StackLayout Orientation="Vertical" VerticalOptions="Center" >
+				<Label Text="Cost" TextColor="#66d0f9" FontSize="18" VerticalTextAlignment="Center"/>
+				<Entry x:Name="costText" Placeholder="EGP" HorizontalOptions="Center" Text="{Binding Cost}" WidthRequest="290" Keyboard="Numeric"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Vertical" VerticalOptions="Center">
+				<Label Text="Comment" TextColor="#66d0f9" FontSize="18" VerticalTextAlignment="Center"></Label>
+				<Entry Text="{Binding Comment}" Placeholder="Write your comment here" x:Name="commentText" WidthRequest="290" HorizontalOptions="Center"/>
+			</StackLayout>
+
+			<Button Clicked="Send_Clicked" Text="SEND" x:Name="send" BackgroundColor="#66d0f9" TextColor="#FFFFFF" WidthRequest="220" Margin="20" HeightRequest="50" HorizontalOptions="Center"/>
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+C:\Users\Rana\source\repos\App7\App7\App7\bin\Release\netstandard2.0\App7.deps.json
+C:\Users\Rana\source\repos\App7\App7\App7\bin\Release\netstandard2.0\App7.dll
+C:\Users\Rana\source\repos\App7\App7\App7\bin\Release\netstandard2.0\App7.pdb
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\View\HomePage.xaml.g.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\View\ReportPage.xaml.g.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\View\TaskDetailsPage.xaml.g.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App7.csproj.CoreCompileInputs.cache
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App7.AssemblyInfoInputs.cache
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App7.AssemblyInfo.cs
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App7.dll
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App7.pdb
+C:\Users\Rana\source\repos\App7\App7\App7\obj\Release\netstandard2.0\App7.csprojAssemblyReference.cache
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\bin\Release\netstandard2.0\App7.deps.json
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\bin\Release\netstandard2.0\App7.dll
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\bin\Release\netstandard2.0\App7.pdb
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\bin\Release\netstandard2.0\Mono.Android.dll
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\bin\Release\netstandard2.0\Mono.Android.pdb
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\bin\Release\netstandard2.0\Mono.Android.xml
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.csprojAssemblyReference.cache
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App.xaml.g.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\View\HomePage.xaml.g.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\View\LoginPage.xaml.g.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\View\ReportPage.xaml.g.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\View\TaskDetailsPage.xaml.g.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.csproj.CoreCompileInputs.cache
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.AssemblyInfoInputs.cache
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.AssemblyInfo.cs
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\XamlC.stamp
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.csproj.CopyComplete
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.dll
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\App7.pdb
+E:\MAG Solutions\Qabnoury\App7\App7\App7\App7\obj\Release\netstandard2.0\View\OfflinePage.xaml.g.cs

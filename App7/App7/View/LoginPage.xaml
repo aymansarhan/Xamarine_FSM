@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:App7.ViewModel"
+             x:Class="App7.View.LoginPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+			<Image Source="magicon.png" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="Center" />
+			<Entry Placeholder="Username" x:Name="username" Text="{Binding username}" WidthRequest="250" HorizontalOptions="Center" Margin="10"/>
+			<Entry Placeholder="password" x:Name="password" Text="{Binding password}" IsPassword="True" WidthRequest="250" HorizontalOptions="Center"/>
+			<Button Command="{Binding LoginCommand}" Text="Login" x:Name="login" BackgroundColor="#66d0f9" TextColor="#FFFFFF" WidthRequest="220" Margin="18" HeightRequest="50" HorizontalOptions="Center"/>
+
+		</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

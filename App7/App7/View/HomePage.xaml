@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:App7.ViewModel"
+             x:Class="App7.View.HomePage"
+			 Title="FSM">
+
+    <ContentPage.BindingContext>
+        <viewModels:TaskViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="Refresh" Icon="updatewhite.png" Clicked="Refresh_Clicked"/>
+        <ToolbarItem x:Name="Add" Icon="addwhite.png" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<Label Margin="5" Text="{Binding Message}" FontSize="Medium" TextColor="Black" HorizontalOptions="Center" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+
+			<ListView x:Name="tasksList" ItemsSource="{Binding tasks}" 
+					  HasUnevenRows="True" SeparatorVisibility="Default" 
+					  SeparatorColor="Black"
+					  ItemTapped="TasksList_ItemTapped">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Orientation="Vertical">
+								<Frame Margin="5" BackgroundColor="White">
+									<Label Margin="5" HorizontalTextAlignment="End" Text="{Binding date}" FontAttributes="Bold" FontSize="Medium"/>
+								</Frame>
+								<ListView IsVisible="{Binding IsVisible}" HorizontalOptions="Center" ItemsSource="{Binding jobs}" HasUnevenRows="True" SeparatorVisibility="Default" SeparatorColor="Black" x:Name="listviewjobs" ItemTapped="listview_ItemTapped">
+									<ListView.ItemTemplate>
+										<DataTemplate>
+											<ViewCell>
+												<Frame Margin="10" BackgroundColor="#e8e8e8">
+													<Grid x:Name="gridview" HorizontalOptions="Center" VerticalOptions="Center">
+														<Label Text="{Binding Id}" Grid.Row="0" FontSize="15" TextColor="Black" TextDecorations="Underline" HorizontalOptions="Center"/>
+														<Label Text="{Binding Title}" Grid.Row="1" FontSize="18"/>
+														<Label Text="{Binding ScheduledAt}" Grid.Row="2" FontSize="15" TextColor="Black" TextDecorations="Underline"/>
+														<Label Text="{Binding Type.Name}" Grid.Row="3" FontSize="15" HorizontalOptions="Center"/>
+														<Label Text="{Binding customer.Name}" Grid.Row="4" FontSize="15" HorizontalOptions="Center"/>
+														<Label Text="{Binding Status.Name}" Grid.Row="5" FontSize="15" TextColor="Red" HorizontalOptions="Center"/>
+														<Label Text="{Binding employeeStatusOnJob}" Grid.Row="6" FontSize="15" TextColor="#66d0f9" HorizontalOptions="Center"/>
+													</Grid>
+												</Frame>
+											</ViewCell>
+										</DataTemplate>
+									</ListView.ItemTemplate>
+								</ListView>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>
